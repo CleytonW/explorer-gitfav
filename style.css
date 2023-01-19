@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-primary: 'Roboto', sans-serif;
+
+  --tt-color: hsl(240, 9%, 89%);
+  --tt-remove: #F75A68;
+
+  --bg-body: hsl(0, 0%, 0%);
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--bg-body);
+  color: var(--tt-color);
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.app {
+  max-width: 112rem;
+  margin: 11rem auto 11rem;
+}
+
+header {
+  margin-bottom: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.search input {
+  width: 46rem;
+  height: 4.8rem;
+  padding: 1.6rem;
+
+  background: #06181C;
+  color: #7C7C8A;
+  font-size: 1.6rem;
+  line-height: 100%;
+
+  border-radius: .5rem;
+  border: none;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+  padding: 12px 32px;
+  width: 17rem;
+  height: 4.8rem;
+
+  background: #065E7C;
+  border-radius: 5px;
+  border: none;
+
+  font-weight: 700;
+  font-size: 14px;
+  /* line-height: 24px; */
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  cursor: pointer;
+}
+
+button:hover {
+  color: #065E7C;
+	background-color: #FFF;
+  transition: 1s;
+}
+
+button:hover svg path{
+  fill: #065E7C;
+  transition: 1s;
+}
+
+.table-wrapper {
+  margin: 0 auto;
+  
+  height: 50vh;
+
+  border: 1px solid #4A808C;
+  border-radius: 1.2rem;
+}
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 1.2rem;
+  border-collapse: collapse;
+
+  box-shadow: 0 1rem 10rem -1rem rgba(97, 139, 212, 0.689);
+}
+
+thead {
+  background: #092D38;
+}
+
+table td, table th {
+  text-align: left;
+  font-weight: 700;
+  padding: 1.6rem 2.4rem 1.6rem 4rem;
+}
+
+table th:first-child {
+  border-top-left-radius: 1.2rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 1.2rem;
+}
+
+table tr:nth-child(even) {
+  background: #06181C;
+}
+
+table tr:nth-child(odd){
+  background: rgba(6, 22, 27, 0.5);
+}
