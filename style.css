@@ -37,7 +37,7 @@ body * {
   border-width: 0;
 }
 
-.app {
+#app {
   max-width: 112rem;
   margin: 11rem auto 11rem;
 }
@@ -69,7 +69,7 @@ header {
   border: none;
 }
 
-button {
+.button-search {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,21 +92,19 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.button-search:hover {
   color: #065E7C;
 	background-color: #FFF;
   transition: 1s;
 }
 
-button:hover svg path{
+.button-search:hover svg path{
   fill: #065E7C;
   transition: 1s;
 }
 
 .table-wrapper {
   margin: 0 auto;
-  
-  height: 50vh;
 
   border: 1px solid #4A808C;
   border-radius: 1.2rem;
@@ -125,7 +123,7 @@ thead {
   background: #092D38;
 }
 
-table td, table th {
+table th {
   text-align: left;
   font-weight: 700;
   padding: 1.6rem 2.4rem 1.6rem 4rem;
@@ -139,6 +137,10 @@ table th:last-child {
   border-top-right-radius: 1.2rem;
 }
 
+tbody tr:last-child {
+  border-bottom-left-radius: 9999rem;
+}
+
 table tr:nth-child(even) {
   background: #06181C;
 }
@@ -146,3 +148,49 @@ table tr:nth-child(even) {
 table tr:nth-child(odd){
   background: rgba(6, 22, 27, 0.5);
 }
+
+table td {
+  text-align: left;
+  font-weight: 700;
+  padding: 1.6rem 2.4rem 1.6rem 4rem;
+} 
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+  
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+  color: var(--tt-color);
+ }
+
+ .user a span {
+  font-weight: 400;
+  font-size: 1.3rem;
+ }
+
+ .remove {
+  color: var(--tt-remove);
+  cursor: pointer;
+
+  background: none;
+  border: none;
+  line-height: 160%;
+ }
+
+ .empty.active {
+  background-image: url(/assets/empty.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+ }
