@@ -1,15 +1,4 @@
-export class GithubUser {
-  static search(username) {
-    const endpoint = `https://api.github.com/users/${username}`
-
-    return fetch(endpoint).then(data => data.json()).then(({ login, name, public_repos, followers }) => ({
-      login,
-      name,
-      public_repos,
-      followers
-    }))
-  }
-}
+import { GithubUser } from "./githubUSer.js"
 
 export class Favorites {
   constructor(root) {
@@ -77,6 +66,14 @@ export class FavoritesView extends Favorites {
   }
 
   update(){
+    
+    const tbody = document.querySelector('.table-wrapper')
+    if (this.entries.length === 0) {
+      tbody.classList.add('empty')
+    } else {
+      tbody.classList.remove('empty"')
+    }
+   
     this.removeAllTr()
     
     this.entries.forEach(user => {
@@ -90,7 +87,7 @@ export class FavoritesView extends Favorites {
       row.querySelector('.followers').textContent = user.followers
 
       row.querySelector('.remove').onclick = () => {
-        const isOk = confirm("Tem certeza que deseja remoevr esse usuário?")
+        const isOk = confirm("Tem certeza que deseja remover esse usuário?")
         if(isOk) {
           this.delete(user)
         }
@@ -124,6 +121,20 @@ export class FavoritesView extends Favorites {
 
     return tr
   }
+
+  createEmptyFavorite() {
+		const tr = document.createElement('tr')
+
+		tr.innerHTML = `
+		<td colspan="4">
+			<div class="no-favorite">
+				<img src="./assets/empty.svg" alt="imagem de uma estrela com a boca aberta expressando um oh">
+				<p>Nenhum favorito ainda</p>
+			</div>
+		</td>
+		`
+		return tr
+	}
 
   removeAllTr() {
     this.tbody.querySelectorAll('tr').forEach((tr) => {

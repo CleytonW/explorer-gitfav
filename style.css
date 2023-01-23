@@ -108,15 +108,20 @@ header {
 
   border: 1px solid #4A808C;
   border-radius: 1.2rem;
+
+  box-shadow: 0 1rem 10rem -1rem rgba(97, 139, 212, 0.689);
+  height: 40rem;
+}
+
+.table-wrapper.empty {
+  background-image: url(./assets/empty.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 table {
   width: 100%;
-  margin: 0 auto;
-  border-radius: 1.2rem;
   border-collapse: collapse;
-
-  box-shadow: 0 1rem 10rem -1rem rgba(97, 139, 212, 0.689);
 }
 
 thead {
@@ -135,10 +140,6 @@ table th:first-child {
 
 table th:last-child {
   border-top-right-radius: 1.2rem;
-}
-
-tbody tr:last-child {
-  border-bottom-left-radius: 9999rem;
 }
 
 table tr:nth-child(even) {
@@ -186,11 +187,4 @@ td.user a {
   background: none;
   border: none;
   line-height: 160%;
- }
-
- .empty.active {
-  background-image: url(/assets/empty.svg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
  }
