@@ -25,7 +25,7 @@ No desafio criamos uma interface para salvar os usuários que mais gostamos util
 
 
 ## 🚀 Tecnologias:
-<div align="center">
+
 
 </br>
   <img align="center" alt="html5" src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white">
@@ -38,7 +38,7 @@ No desafio criamos uma interface para salvar os usuários que mais gostamos util
 
 ## Entre em contato comigo através dos links:
 <br>
-<div align="center">
+
 
   <a href = "mailto:cleytonw@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
   <a href="https://www.linkedin.com/in/cleyton-melo/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
