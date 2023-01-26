@@ -66,14 +66,6 @@ export class FavoritesView extends Favorites {
   }
 
   update(){
-    
-    const tbody = document.querySelector('.table-wrapper')
-    if (this.entries.length === 0) {
-      tbody.classList.add('empty')
-    } else {
-      tbody.classList.remove('empty"')
-    }
-   
     this.removeAllTr()
     
     this.entries.forEach(user => {
@@ -95,6 +87,13 @@ export class FavoritesView extends Favorites {
 
       this.tbody.append(row)
     })
+
+    const tbody = document.querySelector('.table-wrapper')
+    if (this.entries.length === 0) {
+      tbody.classList.add('empty')
+    } else {
+      tbody.classList.remove('empty')
+    }
   }
 
   createRow() {
@@ -121,20 +120,6 @@ export class FavoritesView extends Favorites {
 
     return tr
   }
-
-  createEmptyFavorite() {
-		const tr = document.createElement('tr')
-
-		tr.innerHTML = `
-		<td colspan="4">
-			<div class="no-favorite">
-				<img src="./assets/empty.svg" alt="imagem de uma estrela com a boca aberta expressando um oh">
-				<p>Nenhum favorito ainda</p>
-			</div>
-		</td>
-		`
-		return tr
-	}
 
   removeAllTr() {
     this.tbody.querySelectorAll('tr').forEach((tr) => {
