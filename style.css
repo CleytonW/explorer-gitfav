@@ -87,7 +87,6 @@ header {
 
   font-weight: 700;
   font-size: 14px;
-  /* line-height: 24px; */
   text-transform: uppercase;
   color: #FFFFFF;
 
@@ -209,7 +208,6 @@ td.user a {
   border: 6px solid transparent;
 }
 
-
 @media (max-width: 830px) {
 
   #app {
@@ -237,12 +235,6 @@ td.user a {
     width: 80vw;
   }
 }
-
-/* @media (max-width: 745px) {
-  .empty img{
-    width: 1rem;
-  }
-} */
 
 @media (max-width: 652px) {
   .table-wrapper {
