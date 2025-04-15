@@ -1,44 +1,45 @@
-# GitFav
+# 📘 GitFav
 
+![image](https://github.com/user-attachments/assets/3eb9a504-05ae-4ea0-b55b-b5eac9b49e9a)
+<!-- <img src="https://sdmntpreastus2.oaiusercontent.com/files/00000000-084c-61f6-a9c2-c79632e72cd8/raw?se=2025-04-15T23%3A26%3A11Z&sp=r&sv=2024-08-04&sr=b&scid=c35ac9b9-aaaf-54ee-a433-0d12ae932439&skoid=a47cd303-16a2-427e-8efb-2ce406116005&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-15T23%3A16%3A40Z&ske=2025-04-16T23%3A16%3A40Z&sks=b&skv=2024-08-04&sig=kRFwF/RxI6EJ/vBej4pf89PfvEuynsWH1klxXAPxhuA%3D"> -->
 
-## 💻 Desafio
+### 💡 Sobre o projeto
+Uma aplicação que permite buscar perfis do GitHub e salvar seus favoritos em uma tabela dinâmica com persistência local.
 
-A ideia foi de criar o **GitFav**!  **💜**
+## 💻 Tecnologias
 
-No desafio criamos uma interface para salvar os usuários que mais gostamos utilizando API do github.
+- HTML
+- CSS
+- JavaScript
+- GitHub API
+- localStorage
 
-## 🚀 Nesse projeto estudei e pratiquei:
+## 🚀 Funcionalidades
 
-* Classes Construtoras;
-* Promessas com Async Await;
-* Try, catch and throw;
-* API Github;
-* Imutabilidade em Programação Funcional;
-* Usando local storage;
-* Usando fetch() e .then();
-* Funções callback;
-* Trabalhando com tabelas HTML;
-* Módulos ES6.
+- Buscar perfis do GitHub pelo nome de usuário
+- Listar usuários com dados como repositórios e seguidores
+- Remover perfis da lista
+- Dados salvos no navegador (localStorage)
 
-<!-- Aqui está o [**link**](https://www.figma.com/file/SzQA07HwmSPj4hOYgu1Pps/%5BDesafios-Explorer%5D-GitFav/duplicate) com o layout da aplicação. Ele abrirá um arquivo igual a imagem abaixo: -->
+## 📚 O que eu aprendi
 
+- Consumo de API REST com JavaScript
+- Manipulação de DOM e eventos
+- Armazenamento de dados com localStorage
+- Modularização de código
+- Reutilização de componentes em JavaScript
 
+## 📦 Como usar
 
-## 🚀 Tecnologias:
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/CleytonW/explorer-gitfav.git
+2. Acesse o diretório do projeto:
+   ```bash
+    cd explorer-gitfav
+3. Abra o arquivo index.html no seu navegador.
 
+## 🔖 Layout
+Este projeto segue o layout proposto pela Rocketseat no Explorer.
 
-</br>
-  <img align="center" alt="html5" src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white">
-  <img align="center" alt="css" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-  <img align="center" alt="javascript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-</div>
-<br>
-
-
-
-## Entre em contato comigo através dos links:
-<br>
-
-
-  <a href = "mailto:cleytonw@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/cleyton-melo/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+Desenvolvido com 💜 por Cleyton Melo
